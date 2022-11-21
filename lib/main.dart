@@ -703,7 +703,7 @@ class _CameraExampleHomeState extends State<CameraExampleHome>
     } on CameraException catch (e) {
       switch (e.code) {
         case 'CameraAccessDenied':
-          showInSnackBar('You have denied camera access.');
+          showInSnackBar('You have denied camera access.')
           break;
         case 'CameraAccessDeniedWithoutPrompt':
           // iOS only
